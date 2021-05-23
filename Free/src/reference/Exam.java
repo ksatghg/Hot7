@@ -1,4 +1,4 @@
-package sec01exam01;
+package reference;
 
 import java.util.Scanner;
 
