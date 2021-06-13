@@ -16,11 +16,11 @@ public class Deck {
 	}
 	@Override
 	public String toString() {
-		String cardListOutput = "";
-		for(Card aCard : this.cards) {
-			cardListOutput += aCard.toString()+". ";
+		String cardList = "";
+		for(Card list : this.cards) {
+			cardList += list.toString()+". ";
 		}
-		return cardListOutput;
+		return cardList;
 	}
 	public int deckSize() {
 		int a = this.cards.size();
