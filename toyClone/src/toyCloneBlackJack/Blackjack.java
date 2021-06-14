@@ -14,8 +14,7 @@ public class Blackjack {
 	
 	playingDeck.createDeck();
 	playingDeck.shuffleDeck();
-	
-	
+		
 	Double money = 200.00;
 	
 	while(money>0) {
@@ -42,9 +41,10 @@ public class Blackjack {
 		Card b = dealerDeck.getCard(0);
 		
 		
-		//안보이는거 드로우
+		
 		playerDeck.draw(playingDeck);
 		Deck c = playerDeck;
+		//안보이는거 드로우
 		dealerDeck.draw(playingDeck);
 		Deck d = dealerDeck;
 		
@@ -60,7 +60,7 @@ public class Blackjack {
 		
 		//플레이어가 hit 할건지 stay 할건지
 		while(true) {
-			System.out.println("1 누르면 HIT, 2누르면 STAY");
+			System.out.println("1 누르면 HIT, 2 누르면 STAY");
 			int hitOrStay=scan.nextInt();
 			if(hitOrStay==1) {
 				playerDeck.draw(playingDeck);
